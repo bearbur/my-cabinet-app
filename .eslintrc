@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["react","prettier"],
+  "rules": {
+    "react/no-typos": "off",
+    "prettier/prettier": "warn",
+    "no-console": "warn",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

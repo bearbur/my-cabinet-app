@@ -1,0 +1,60 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "test": "jest",
+
+    "lint": "npm run lint-css && npm run lint-js",
+    "lint:fix": "npm run lint-css:fix npm run lint-js:fix",
+    "lint-js": "eslint src --max-warnings=0",
+    "lint-js:fix": "eslint src --fix",
+    "lint-css": "stylelint \"src/**/*.js\" --syntax css-in-js",
+    "lint-css:fix": "stylelint \"src/**/*.js\" --syntax css-in-js --fix",
+    "prettier-json:fix": "prettier --write \"src/**/*.json\""
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/native": "^5.7.5",
+    "@react-navigation/stack": "^5.9.2",
+    "expo": "~39.0.2",
+    "expo-splash-screen": "~0.6.2",
+    "expo-status-bar": "~1.0.2",
+    "expo-updates": "~0.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "~0.63.3",
+    "react-native-gesture-handler": "~1.7.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "3.1.4",
+    "react-native-screens": "~2.10.1",
+    "react-native-unimodules": "~0.11.0",
+    "react-native-web": "~0.13.12",
+
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "babel-jest": "~25.2.6",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.13.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "1.16.4",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^3.1.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-react": "^7.21.3",
+    "prop-types": "^15.7.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "private": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "my-ice-cabinet-app",
+  "displayName": "my-ice-cabinet-app",
+  "expo": {
+    "name": "my-ice-cabinet-app",
+    "slug": "my-ice-cabinet-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
